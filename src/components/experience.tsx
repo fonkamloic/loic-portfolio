@@ -101,6 +101,7 @@ const ExperienceCard = ({ experience }: { experience: WorkExperience }) => {
                   buttonVariants({ variant: "outline" }),
                   " border-foreground min-w-max bg-background/[0.1]",
                 )}
+                target="_blank"
               >
                 {link.label}
                 <ExternalLink className="w-4 h-4 ml-2" />
@@ -116,7 +117,7 @@ const ExperienceCard = ({ experience }: { experience: WorkExperience }) => {
 function Experience() {
   return (
     <section className="min-h-screen bg-background/[0.2]">
-      <div className="max-w-6xl mx-auto py-20 px-8">
+      <div className="max-w-6xl mx-auto py-32 px-8">
         <h1 className="text-5xl tracking-wider mb-24 font-bold text-center">
           Work Experience
         </h1>
