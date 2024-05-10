@@ -8,7 +8,7 @@ const summary =
 const yearsOfExperience = 5;
 function Hero() {
   return (
-    <section className="max-w-6xl mx-auto min-w-0 flex flex-col flex-wrap gap-8 md:flex-row px-8 md:min-h-[calc(100vh-6rem)] md:items-center overflow-hidden py-12 md:py-0">
+    <section className="max-w-6xl mx-auto min-w-0 flex flex-col flex-wrap gap-8 md:flex-row px-8 md:min-h-[calc(100vh-6rem)] md:items-center overflow-hidden py-12 pb-32 md:py-0">
       <div className="flex-1 flex flex-col justify-between max-h-[35rem] min-w-0">
         <div className="flex flex-col gap-4 flex-1">
           <h3 className="text-primary text-xl font-light tracking-wider">
