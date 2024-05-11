@@ -4,6 +4,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Inter as FontSans } from "next/font/google";
 import Navbar from "@/components/navbar";
+import { Toaster } from "@/components/ui/sonner";
+import "simplebar-react/dist/simplebar.min.css";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -29,6 +31,7 @@ export default function RootLayout({
         )}
       >
         <Navbar />
+        <Toaster />
         {children}
       </body>
     </html>
