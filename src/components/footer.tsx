@@ -6,26 +6,7 @@ import { buttonVariants } from "./ui/button";
 import Logo from "./ui/logo";
 import { ExternalLink } from "lucide-react";
 import { Icons } from "./ui/icons";
-
-type SocialLink = {
-  label: "GitHub" | "Twitter" | "LinkedIn";
-  url: string;
-};
-
-const socialLinks: SocialLink[] = [
-  {
-    label: "GitHub",
-    url: "",
-  },
-  {
-    label: "Twitter",
-    url: "",
-  },
-  {
-    label: "LinkedIn",
-    url: "",
-  },
-];
+import { socialLinks } from "@/app/data";
 
 function Footer() {
   return (

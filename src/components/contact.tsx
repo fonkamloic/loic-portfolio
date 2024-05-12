@@ -2,7 +2,7 @@
 import React from "react";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import { z } from "zod";
 
 import { Button } from "@/components/ui/button";
@@ -16,7 +16,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { MapPin, Mail, Phone, SendHorizonal } from "lucide-react";
+import { MapPin, Mail, Phone, SendHorizonal, Loader2 } from "lucide-react";
 import { Textarea } from "./ui/textarea";
 import { toast } from "sonner";
 
@@ -65,10 +65,26 @@ export function ContactForm() {
       message: "",
     },
   });
+  const [isSubmitting, setIsSubmitting] = React.useState<boolean>(false);
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    toast.success("Message sent successfully!");
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      setIsSubmitting(true);
+      await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+      toast.success("Message sent successfully.");
+      form.reset();
+    } catch (error) {
+      toast.error("An error occurred. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -113,8 +129,14 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit">
-          Send message <SendHorizonal className="w-4 h-4 ml-3" />{" "}
+        <Button type="submit" disabled={isSubmitting}>
+          {isSubmitting ? (
+            <Loader2 className="w-4 h-4 animate-spin" />
+          ) : (
+            <>
+              Send message <SendHorizonal className="w-4 h-4 ml-3" />
+            </>
+          )}
         </Button>
       </form>
     </Form>

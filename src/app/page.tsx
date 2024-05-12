@@ -4,7 +4,7 @@ import Experience from "@/components/experience";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
-import Testimony from "@/components/testimony";
+import Testimonies from "@/components/testimony";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <Experience />
       <Projects />
       {/* <Education /> */}
-      <Testimony />
+      <Testimonies />
       <Contact />
       <Footer />
     </main>
