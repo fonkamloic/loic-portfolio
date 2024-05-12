@@ -35,7 +35,7 @@ function CarouselSpacing() {
                   <Image
                     src={testimony.picture.src}
                     alt={testimony.picture.alt}
-                    className="object-cover w-full  rounded-full mb-8"
+                    className="object-cover w-full h-full rounded-full mb-8"
                     width={testimony.picture.width}
                     height={testimony.picture.height}
                   />
