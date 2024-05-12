@@ -145,7 +145,7 @@ export function ContactForm() {
 
 function Contact() {
   return (
-    <section className="bg-background/[0.2]">
+    <section className="bg-background/[0.2]" id="contact">
       <div className="">
         <div className="max-w-6xl mx-auto py-32 px-8">
           <div className="flex flex-col md:items-start gap-8 md:flex-wrap md:flex-row">

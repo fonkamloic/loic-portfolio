@@ -86,7 +86,7 @@ function Projects() {
     );
   };
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative" id="works">
       <div className="project-bento opacity-1 min-w-screen">
         <div className="max-w-6xl mx-auto py-32 px-8 relative min-h-screen">
           <h1 className="text-5xl tracking-wider mb-24 font-bold text-center">

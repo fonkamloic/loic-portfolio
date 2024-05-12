@@ -1,12 +1,17 @@
 import { ArrowRightIcon } from "lucide-react";
 import React from "react";
-import { Button } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import { personalInformation } from "@/app/data";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 function Hero() {
   return (
-    <section className="max-w-6xl mx-auto min-w-0 flex flex-col flex-wrap gap-8 md:flex-row px-8 md:min-h-[calc(100vh-6rem)] md:items-center overflow-hidden py-12 pb-32 md:py-0">
+    <section
+      id="about"
+      className="max-w-6xl mx-auto min-w-0 flex flex-col flex-wrap gap-8 md:flex-row px-8 md:min-h-[calc(100vh-6rem)] md:items-center overflow-hidden py-12 pb-32 md:py-0"
+    >
       <div className="flex-1 flex flex-col justify-between max-h-[35rem] min-w-0">
         <div className="flex flex-col gap-4 flex-1">
           <h3 className="text-primary text-xl font-light tracking-wider">
@@ -18,14 +23,16 @@ function Hero() {
           </p>
 
           <div>
-            <Button
-              variant={"outline"}
-              className="mt-12 mb-12 md:mb-0 md:mt-8 inline-flex bg-primary/[0.1] border-primary text-primary"
-              size="lg"
+            <Link
+              className={cn(
+                buttonVariants({ variant: "outline", size: "lg" }),
+                "mt-12 mb-12 md:mb-0 md:mt-8 inline-flex bg-primary/[0.1] border-primary text-primary cursor-pointer",
+              )}
+              href="/#contact"
             >
               Get in touch
               <ArrowRightIcon className="w-4 h-4 ml-2" />
-            </Button>
+            </Link>
           </div>
         </div>
         <div className="gap-4 items-end mt-12 hidden md:flex">

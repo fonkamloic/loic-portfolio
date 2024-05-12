@@ -119,7 +119,7 @@ function CarouselSpacing() {
 
 function Testimonies() {
   return (
-    <section>
+    <section id="testimonies">
       <div className="max-w-7xl mx-auto py-32 px-8">
         <h1 className="text-5xl tracking-wider mb-12 font-bold text-center">
           Testimonies

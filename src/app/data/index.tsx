@@ -27,6 +27,7 @@ export const personalInformation = {
     height: 600,
   },
   email: "fonkamloic@gmail.com",
+  resume: "https://loicfonkam.com/resume.pdf",
 };
 
 export const socialLinks: SocialLink[] = [
