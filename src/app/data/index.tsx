@@ -5,7 +5,7 @@ export const seoInformation = {
   description:
     "Award-winning Flutter developer with over 5 years of experience.",
   url: "https://loicfonkam.com",
-  image: "https://source.unsplash.com/random/800x600?sig=70",
+  image: "https://avatars.githubusercontent.com/u/23703424?v=4",
   keywords: [
     "Loic Fonkam",
     "Flutter Developer",
@@ -19,33 +19,50 @@ export const personalInformation = {
   summary:
     "Award-winning Flutter developer with over 5 years of experience. Organized, highly motivated problem-solver who is enthusiastic about CyberSecurity and Specializes in secure coding.",
   yearsOfExperience: 5,
-  logoPicture: "https://github.com/shadcn.png",
+  logoPicture: "https://avatars.githubusercontent.com/u/23703424?v=4",
   picture: {
-    src: "https://source.unsplash.com/random/800x600?sig=70",
+    src: "/images/Loic's Poforlio.png",
     alt: "Loic Fonkam",
-    width: 800,
-    height: 600,
+    width: 502,
+    height: 562,
   },
   email: "fonkamloic@gmail.com",
-  resume: "https://loicfonkam.com/resume.pdf",
+  resume:
+    "https://docs.google.com/document/d/1wBtJ6xc35_pLtT66Nb_5gl6qYLtlb3rl6KpRBdrnk3I/export?format=pdf",
 };
 
 export const socialLinks: SocialLink[] = [
   {
     label: "GitHub",
-    url: "",
+    url: "https://github.com/fonkamloic",
   },
   {
     label: "Twitter",
-    url: "",
+    url: "https://twitter.com/FonkamL",
   },
   {
     label: "LinkedIn",
-    url: "",
+    url: "https://www.linkedin.com/in/fonkamloic",
   },
 ];
 
 export const workExperiences: WorkExperience[] = [
+  {
+    company: "Savana, Inc",
+    location: "Remote",
+    position: "Senior Flutter Developer",
+    startDate: "Jan 2023",
+    endDate: "Present",
+    description: `Leverage Savana's unified platform to craft banking experience platform and
+intuitive banking applications, ensuring unparalleled customer experiences
+across all digital channels`,
+    links: [
+      {
+        label: "Website",
+        url: "https://www.savanainc.com",
+      },
+    ],
+  },
   {
     company: "LyteLoop",
     location: "New York",
@@ -140,22 +157,10 @@ export const testimonies: Testimony[] = [
 
 export const projects: Project[] = [
   {
-    title: "The Dawn of Innovation",
-    longDescription: `Explore the birth of groundbreaking ideas and inventions. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Cumque vero atque magnam
-                        tempore voluptatem tempora, sequi ea in molestias iusto
-                        ipsa quaerat voluptates quibusdam nihil, ab enim
-                        excepturi porro odio? Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Obcaecati voluptatum
-                        porro, itaque velit nulla autem ad minus laborum dolorem
-                        blanditiis, consequuntur aliquam dolores delectus, illum
-                        suscipit repellat praesentium incidunt repellendus.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Pariatur nostrum deserunt sequi veniam corporis
-                        ducimus quis expedita vero magnam consectetur totam
-                        facere neque incidunt autem, doloremque, ipsum modi quam
-                        et.`,
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    title: "tenflr",
+    longDescription: `Whether you are a business owner, student or cab-driver, Tenflr offers you multiple ways to either manage your finances or get paid quickly via our secure cashless payment method. `,
+    description:
+      "An innovative mobile wallet to digitize and simplify finance in Cameroon.",
     className: "md:col-span-2",
     links: [
       {
@@ -167,10 +172,26 @@ export const projects: Project[] = [
         url: "https://youtu.be/9qlGA1vd3LM",
       },
     ],
-    skills: [],
+    skills: [
+      {
+        label: "Flutter",
+      },
+      {
+        label: "Dart",
+      },
+      {
+        label: "Firebase",
+      },
+      {
+        label: "Node.js",
+      },
+      {
+        label: "Express",
+      },
+    ],
     picture: {
       src: "https://source.unsplash.com/random/800x600?sig=0",
-      alt: "The Dawn of Innovation",
+      alt: "Tenflr",
       width: 800,
       height: 600,
     },

@@ -40,10 +40,17 @@ function Navbar() {
         <nav className="hidden items-center gap-3 md:flex md:opacity-1">
           {renderNav()}
         </nav>
-        <Button className="hidden md:flex">
+        <Link
+          href={personalInformation.resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          locale={false}
+          download
+          className={cn(buttonVariants(), "cursor-pointer")}
+        >
           Resume
           <DownloadIcon className="w-4 h-4 ml-2" />
-        </Button>
+        </Link>
 
         <Sheet>
           <SheetTrigger className="md:hidden" asChild>
