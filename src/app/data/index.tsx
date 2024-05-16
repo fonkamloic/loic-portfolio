@@ -89,19 +89,19 @@ across all digital channels`,
       "Developed Android and iOS messaging apps for secure communication. Deployed Signal server for secure backend message transmission. Build an application with built-in physical security to reinforce data integrity at rest and in use.",
     links: [
       {
-      label: "Website", 
-      url: "https://www.flutterplaza.com/"
-      }, 
+        label: "Website",
+        url: "https://www.flutterplaza.com/"
+      },
       {
-        label: "University", 
+        label: "University",
         url: "https://university.flutterplaza.com/"
 
-      }, 
+      },
       {
-        label: "Contributions", 
+        label: "Contributions",
         url: "https://pub.dev/publishers/flutterplaza.com/packages"
       }, {
-        label: "GitHub", 
+        label: "GitHub",
         url: "https://github.com/flutterplaza"
       }
     ],
@@ -116,9 +116,9 @@ across all digital channels`,
       "Developed Android and iOS messaging apps for secure communication. Deployed Signal server for secure backend message transmission. Build an application with built-in physical security to reinforce data integrity at rest and in use.",
     links: [
       {
-      label: "Website", 
-      url: "https://web.archive.org/web/20211005022256/https://lyteloop.com/"
-      } 
+        label: "Website",
+        url: "https://web.archive.org/web/20211005022256/https://lyteloop.com/"
+      }
     ],
   },
 
@@ -173,7 +173,7 @@ export const testimonies: Testimony[] = [
       width: 800,
       height: 600,
     },
-    content:`Loïc worked directly for me at LyteLoop developing a secure collaboration application which used LyteLoop's patented storage-in-motion system to as an unhackable storage mechanism. As an experienced Engineering manager I interviewed and hired Loïc based on the strength of his experience - he started coding at an early age - his engaging personality and his focus on writing secure application code. 
+    content: `Loïc worked directly for me at LyteLoop developing a secure collaboration application which used LyteLoop's patented storage-in-motion system to as an unhackable storage mechanism. As an experienced Engineering manager I interviewed and hired Loïc based on the strength of his experience - he started coding at an early age - his engaging personality and his focus on writing secure application code. 
 
     As I anticipated Loïc quickly became a top contributor writing code that was well organized, efficient, documented and worked seamlessly on both iOS and Android platforms. Early on Loïc made it clear that he was focused not only on producing functional Flutter code but on insuring that access and operational security was a top priority. He is a secure coding specialist and advocate. 
     
@@ -191,17 +191,17 @@ export const testimonies: Testimony[] = [
   {
     name: "Tim Matchen",
     picture: {
-      src: "https://media.licdn.com/dms/image/D4E03AQHeFc6xMT7lvw/profile-displayphoto-shrink_100_100/0/1699312676930?e=1721260800&v=beta&t=UurC1ifW-FLowCtfyyF8Q3HWbqfMRK_v-CLh_NIPX-U",
+      src: "https://media.licdn.com/dms/image/D4E03AQHeFc6xMT7lvw/profile-displayphoto-shrink_200_200/0/1699312676930?e=1721260800&v=beta&t=bdYa1z9lmjT7InmuzEJVRBp8rJVHsUSByz9phxhgbps",
       alt: "Tim Matchen",
       width: 800,
       height: 600,
     },
-    content:`Working with Loïc was an absolute pleasure. Beyond his excellent technical skills as a developer, what impressed me most about Loïc was his aptitude as a problem solver. He is the type of person who is interested not only in finding the solution to problems but rather finding the best solution to the problem. 
+    content: `Working with Loïc was an absolute pleasure. Beyond his excellent technical skills as a developer, what impressed me most about Loïc was his aptitude as a problem solver. He is the type of person who is interested not only in finding the solution to problems but rather finding the best solution to the problem. 
 
     All of this is augmented by Loïc's effective communication style. Frequently, we would be faced with multiple potential roads forward, and Loïc would not only undertake a rigorous analysis of the costs, risks, and opportunities with each path, he was able to effectively distill that information and convey it to both technical and non-technical audiences.
     
     On a personal level, I must also recommend Loïc. He is a conscientious individual who places high value not only on his own continuous self-improvement but also using his skillset and knowledge base to help others. Any project manager or product lead would be lucky to work with him.`,
-position: "Researcher | Data Scientist | Problem Solver",
+    position: "Researcher | Data Scientist | Problem Solver",
     links: [
       {
         label: "LinkedIn",
@@ -212,19 +212,19 @@ position: "Researcher | Data Scientist | Problem Solver",
   {
     name: "Ryan Howard",
     picture: {
-      src: "https://media.licdn.com/dms/image/C4E03AQEUXoWVGleqdA/profile-displayphoto-shrink_100_100/0/1516790141092?e=1721260800&v=beta&t=Br3TC0q5oepkf8p4Y_hb6OOGQroxZLG5hHHR6zsT5xE",
+      src: "https://media.licdn.com/dms/image/C4E03AQEUXoWVGleqdA/profile-displayphoto-shrink_200_200/0/1516790140753?e=1721260800&v=beta&t=eSP1Htow5otXYAJ6iC9t3SpWj_ufrQgPYux1R6XSyQU",
       alt: "Ryan Howard",
       width: 800,
       height: 600,
     },
-    content:`If you are reading this, you have found a wonderful candidate for your company. I had the pleasure of working with Loïc during my time at LyteLoop and witnessing firsthand an outstanding developer. From the first interview I had with him through onboarding and continuing contribution to the team he exceeded all expectations. Loïc managed to onboard at the same time we were bringing up a new project and was able to hit the ground running developing our mobile app with limited guidance. He communicated very effectively and worked around the MANY obstacles and blockers of bringing up new project yet still met or exceeded timelines with well thought out code and design.
+    content: `If you are reading this, you have found a wonderful candidate for your company. I had the pleasure of working with Loïc during my time at LyteLoop and witnessing firsthand an outstanding developer. From the first interview I had with him through onboarding and continuing contribution to the team he exceeded all expectations. Loïc managed to onboard at the same time we were bringing up a new project and was able to hit the ground running developing our mobile app with limited guidance. He communicated very effectively and worked around the MANY obstacles and blockers of bringing up new project yet still met or exceeded timelines with well thought out code and design.
     Very quickly he was providing valuable guidance to the rest of the team that advanced the project and soothed pain points of integrating various components. I also had the pleasure of spending time with Loïc outside of the office and found him a charismatic and easy going friend.
     
     I cannot recommend Loïc enough, both as a software engineer and a co-worker.
     
     Ryan Howard
     Sr. Embedded Software Engineer.`,
-position: "Lead Embedded Software Engineer at LyteLoop",
+    position: "Lead Embedded Software Engineer at LyteLoop",
     links: [
       {
         label: "LinkedIn",
@@ -240,9 +240,9 @@ position: "Lead Embedded Software Engineer at LyteLoop",
       width: 800,
       height: 600,
     },
-    content:`Loïc Fonkam is a real gem to work with. He came into a live project and was thrown into the deep end for an app development project in which he showed great flexibility and understanding of the unique requirements. His skills in flutter helped move the project along.
+    content: `Loïc Fonkam is a real gem to work with. He came into a live project and was thrown into the deep end for an app development project in which he showed great flexibility and understanding of the unique requirements. His skills in flutter helped move the project along.
     In addition to his impressive flutter skills, he has shown self driven enthusiasm, is a wonderful team player and a person.`,
-position: "Senior Optical Engineer at KSLD",
+    position: "Senior Optical Engineer at KSLD",
     links: [
       {
         label: "LinkedIn",
