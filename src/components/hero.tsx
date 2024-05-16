@@ -82,7 +82,7 @@ function Hero() {
             <Image
               src={personalInformation.picture.src}
               alt={personalInformation.picture.alt}
-              className="object-cover w-full h-full rounded-xl"
+              className="object-cover w-full h-full rounded-xl ml-[11px]"
               width={personalInformation.picture.width}
               height={personalInformation.picture.height}
             />
