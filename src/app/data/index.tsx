@@ -1,9 +1,9 @@
 import { Project, SocialLink, Testimony, WorkExperience } from "../schema";
 
 export const seoInformation = {
-  title: "Loic Fonkam",
+  title: "Loïc Fonkam",
   description:
-    "Award-winning Flutter developer with over 5 years of experience.",
+    "Award-winning Flutter developer with over 6 years of experience.",
   url: "https://loicfonkam.com",
   image: "https://avatars.githubusercontent.com/u/23703424?v=4",
   keywords: [
@@ -11,14 +11,16 @@ export const seoInformation = {
     "Flutter Developer",
     "CyberSecurity",
     "Secure Coding",
+    "Senior Software Engineer",
+    "Software Engineer"
   ],
 };
 
 export const personalInformation = {
-  name: "Loic Fonkam",
+  name: "Loïc Fonkam",
   summary:
-    "Award-winning Flutter developer with over 5 years of experience. Organized, highly motivated problem-solver who is enthusiastic about CyberSecurity and Specializes in secure coding.",
-  yearsOfExperience: 5,
+    "Award-winning Flutter developer with over 6 years of experience. Organized, highly motivated problem-solver who is enthusiastic about CyberSecurity and Specializes in secure coding.",
+  yearsOfExperience: 6,
   logoPicture: "https://avatars.githubusercontent.com/u/23703424?v=4",
   picture: {
     src: "/images/Loic's Poforlio.png",
@@ -50,9 +52,23 @@ export const workExperiences: WorkExperience[] = [
   {
     company: "Savana, Inc",
     location: "Remote",
+    position: "Senior Software Engineer",
+    startDate: "Jan 2024",
+    endDate: "Present",
+    description: `Orchestrate seamless interactions, driving holistic experiences and building customized projects for clients.`,
+    links: [
+      {
+        label: "Website",
+        url: "https://www.savanainc.com",
+      },
+    ],
+  },
+  {
+    company: "Savana, Inc",
+    location: "Remote",
     position: "Senior Flutter Developer",
     startDate: "Jan 2023",
-    endDate: "Present",
+    endDate: "Jan 2024",
     description: `Leverage Savana's unified platform to craft banking experience platform and
 intuitive banking applications, ensuring unparalleled customer experiences
 across all digital channels`,
@@ -64,6 +80,33 @@ across all digital channels`,
     ],
   },
   {
+    company: "FlutterPlaza",
+    location: "Remote",
+    position: "Open Source Flutter Developer",
+    startDate: "May 2022",
+    endDate: "Present",
+    description:
+      "Developed Android and iOS messaging apps for secure communication. Deployed Signal server for secure backend message transmission. Build an application with built-in physical security to reinforce data integrity at rest and in use.",
+    links: [
+      {
+      label: "Website", 
+      url: "https://www.flutterplaza.com/"
+      }, 
+      {
+        label: "University", 
+        url: "https://university.flutterplaza.com/"
+
+      }, 
+      {
+        label: "Contributions", 
+        url: "https://pub.dev/publishers/flutterplaza.com/packages"
+      }, {
+        label: "GitHub", 
+        url: "https://github.com/flutterplaza"
+      }
+    ],
+  },
+  {
     company: "LyteLoop",
     location: "New York",
     position: "Flutter Developer",
@@ -71,7 +114,12 @@ across all digital channels`,
     endDate: "Apr 2022",
     description:
       "Developed Android and iOS messaging apps for secure communication. Deployed Signal server for secure backend message transmission. Build an application with built-in physical security to reinforce data integrity at rest and in use.",
-    links: [],
+    links: [
+      {
+      label: "Website", 
+      url: "https://web.archive.org/web/20211005022256/https://lyteloop.com/"
+      } 
+    ],
   },
 
   {
@@ -190,7 +238,7 @@ export const projects: Project[] = [
       },
     ],
     picture: {
-      src: "https://source.unsplash.com/random/800x600?sig=0",
+      src: "https://drive.google.com/file/d/14aREnvKULGwZRvgnT3dPi4wAdGlQlhIj/view?usp=sharing",
       alt: "Tenflr",
       width: 800,
       height: 600,
@@ -198,21 +246,8 @@ export const projects: Project[] = [
   },
   {
     title: "The Digital Revolution",
-    longDescription: `Dive into the transformative power of technology. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Cumque vero atque magnam
-                        tempore voluptatem tempora, sequi ea in molestias iusto
-                        ipsa quaerat voluptates quibusdam nihil, ab enim
-                        excepturi porro odio? Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Obcaecati voluptatum
-                        porro, itaque velit nulla autem ad minus laborum dolorem
-                        blanditiis, consequuntur aliquam dolores delectus, illum
-                        suscipit repellat praesentium incidunt repellendus.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Pariatur nostrum deserunt sequi veniam corporis
-                        ducimus quis expedita vero magnam consectetur totam
-                        facere neque incidunt autem, doloremque, ipsum modi quam
-                        et.`,
-    description: "Dive into the transformative power of technology.",
+    longDescription: `Whether you are a business owner, student or cab-driver, Tenflr offers you multiple ways to either manage your finances or get paid quickly via our secure cashless payment method.`,
+    description: "Not just an app, but a great companion.",
     className: "md:col-span-1",
     links: [
       {
