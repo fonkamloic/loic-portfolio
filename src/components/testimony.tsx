@@ -18,7 +18,7 @@ import Image from "next/image";
 
 function CarouselSpacing() {
   return (
-    <Carousel className="w-full max-w-7xl mx-auto">
+    <Carousel className="w-full max-w-8xl mx-auto">
       <CarouselContent className="-ml-1">
         {testimonies.map((testimony) => (
           <CarouselItem
@@ -120,7 +120,7 @@ function CarouselSpacing() {
 function Testimonies() {
   return (
     <section id="testimonies">
-      <div className="max-w-7xl mx-auto py-32 px-8">
+      <div className="max-w-8xl mx-auto py-32 px-8">
         <h1 className="text-5xl tracking-wider mb-12 font-bold text-center">
           Testimonies
         </h1>
