@@ -29,6 +29,8 @@ export const personalInformation = {
     height: 562,
   },
   email: "fonkamloic@gmail.com",
+  address: "",
+  phoneNumber: "",
   resume:
     "https://docs.google.com/document/d/1wBtJ6xc35_pLtT66Nb_5gl6qYLtlb3rl6KpRBdrnk3I/export?format=pdf",
 };

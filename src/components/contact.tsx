@@ -19,6 +19,9 @@ import { Input } from "@/components/ui/input";
 import { MapPin, Mail, Phone, SendHorizonal, Loader2 } from "lucide-react";
 import { Textarea } from "./ui/textarea";
 import { toast } from "sonner";
+import { personalInformation } from "@/app/data";
+
+
 
 type contactInfo = {
   label: string;
@@ -29,17 +32,17 @@ type contactInfo = {
 const contactInfo: contactInfo[] = [
   {
     label: "Email",
-    value: "fonkamloic@gmail.com",
+    value: personalInformation.email,
     icon: <Mail className="w-5 h-5 text-primary" />,
   },
   {
     label: "Location",
-    value: "Utica, NY",
+    value: personalInformation.address,
     icon: <MapPin className="w-5 h-5 text-primary" />,
   },
   {
     label: "Phone",
-    value: "(240)-791-9142",
+    value: personalInformation.phoneNumber,
     icon: <Phone className="w-5 h-5 text-primary" />,
   },
 ];
