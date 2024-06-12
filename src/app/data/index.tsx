@@ -87,8 +87,7 @@ across all digital channels`,
     position: "Founder/Architect",
     startDate: "May 2022",
     endDate: "Present",
-    description:
-      "Developed Android and iOS messaging apps for secure communication. Deployed Signal server for secure backend message transmission. Build an application with built-in physical security to reinforce data integrity at rest and in use.",
+    description: "Lead a team of developers to build Flutter apps and teach staff how to become Flutter experts.",
     links: [
       {
         label: "Website",
@@ -296,7 +295,7 @@ export const projects: Project[] = [
       src: "https://drive.google.com/file/d/1n_48Tj2vaQqb0jcMLBRLKaaUZRNWqifT",
       alt: "FlutterPlaza",
       width: 800,
-      height: 800,
+      height: 600,
     },
   },
     {
@@ -319,7 +318,7 @@ export const projects: Project[] = [
       src: "https://drive.google.com/file/d/1w5wu76RDljs4pw-32QuKVCtnotMeIe3i",
       alt: "FinFlow App",
       width: 800,
-      height: 600,
+      height: 800,
     },
   },
   {
@@ -362,9 +361,9 @@ export const projects: Project[] = [
       src: "https://drive.google.com/uc?export=view&id=14aREnvKULGwZRvgnT3dPi4wAdGlQlhIj",
       alt: "Tenflr",
       width: 800,
-      height: 600,
+      height: 800,
     },
-  },
+  }
   // {
   //   title: "The Art of Design",
   //   longDescription: `Discover the beauty of thoughtful and functional design. Lorem ipsum dolor sit amet
