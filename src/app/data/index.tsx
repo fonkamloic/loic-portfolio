@@ -275,7 +275,7 @@ export const projects: Project[] = [
       },
       {
         label: "Pub Packages",
-        url: "https://pub.dev/packages/no_screenshot",
+        url: "https://pub.dev/publishers/flutterplaza.com/packages",
       },
     ],
     skills: [
@@ -323,6 +323,29 @@ export const projects: Project[] = [
     },
   },
   {
+    title: "Open Source Contributions",
+    description: `I have contributed to several open-source projects on GitHub. I have also published several packages on pub.dev.`,
+    longDescription: "",
+    className: "md:col-span-1",
+    links: [
+      {
+        label: "github",
+        url: "https://pub.dev/publishers/flutterplaza.com/packages",
+      },
+      {
+        label: "Stack Overflow",
+        url: "https://stackoverflow.com/users/11677269/lo%c3%afc-fonkam",
+      },
+    ],
+    skills: [],
+    picture: {
+      src: "https://drive.google.com/uc?export=view&id=1WOBcGZt65OjlkVV5Utf8PubpVSb6U1DO",
+      alt: "stack overflow",
+      width: 800,
+      height: 600,
+    },
+  },
+  {
     title: "tenflr",
     longDescription: `Whether you are a business owner, student or cab-driver, Tenflr offers you multiple ways to either manage your finances or get paid quickly via our secure cashless payment method. `,
     description:
@@ -365,41 +388,4 @@ export const projects: Project[] = [
       height: 800,
     },
   },
-  // {
-  //   title: "The Art of Design",
-  //   longDescription: `Discover the beauty of thoughtful and functional design. Lorem ipsum dolor sit amet
-  //                       consectetur adipisicing elit. Cumque vero atque magnam
-  //                       tempore voluptatem tempora, sequi ea in molestias iusto
-  //                       ipsa quaerat voluptates quibusdam nihil, ab enim
-  //                       excepturi porro odio? Lorem ipsum, dolor sit amet
-  //                       consectetur adipisicing elit. Obcaecati voluptatum
-  //                       porro, itaque velit nulla autem ad minus laborum dolorem
-  //                       blanditiis, consequuntur aliquam dolores delectus, illum
-  //                       suscipit repellat praesentium incidunt repellendus.
-  //                       Lorem ipsum, dolor sit amet consectetur adipisicing
-  //                       elit. Pariatur nostrum deserunt sequi veniam corporis
-  //                       ducimus quis expedita vero magnam consectetur totam
-  //                       facere neque incidunt autem, doloremque, ipsum modi quam
-  //                       et.`,
-  //   description: "Discover the beauty of thoughtful and functional design.",
-  //   className: "md:col-span-1",
-  //   links: [
-  //     {
-  //       label: "github",
-  //       url: "",
-  //     },
-  //     {
-  //       label: "website",
-  //       url: "",
-  //     },
-  //   ],
-  //   skills: [],
-  //   picture: {
-  //     src: "https://source.unsplash.com/random/800x600?sig=2",
-  //     alt: "The Art of Design",
-  //     width: 800,
-  //     height: 600,
-  //   },
-  // },
-
 ];
