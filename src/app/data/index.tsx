@@ -82,7 +82,7 @@ across all digital channels`,
   {
     company: "FlutterPlaza",
     location: "Remote",
-    position: "Open Source Flutter Developer",
+    position: "Founder/Architect",
     startDate: "May 2022",
     endDate: "Present",
     description:
@@ -285,6 +285,9 @@ export const projects: Project[] = [
       {
         label: "Express",
       },
+      {
+        label: "Figma",
+      }
     ],
     picture: {
       src: "https://drive.google.com/file/d/14aREnvKULGwZRvgnT3dPi4wAdGlQlhIj/view",
@@ -292,110 +295,111 @@ export const projects: Project[] = [
       width: 800,
       height: 600,
     },
-  },
-  {
-    title: "The Digital Revolution",
-    longDescription: `Whether you are a business owner, student or cab-driver, Tenflr offers you multiple ways to either manage your finances or get paid quickly via our secure cashless payment method.`,
-    description: "Not just an app, but a great companion.",
-    className: "md:col-span-1",
-    links: [
-      {
-        label: "github",
-        url: "",
-      },
-    ],
-    skills: [],
-    picture: {
-      src: "https://source.unsplash.com/random/800x600?sig=1",
-      alt: "The Digital Revolution",
-      width: 800,
-      height: 600,
-    },
-  },
-  {
-    title: "The Art of Design",
-    longDescription: `Discover the beauty of thoughtful and functional design. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Cumque vero atque magnam
-                        tempore voluptatem tempora, sequi ea in molestias iusto
-                        ipsa quaerat voluptates quibusdam nihil, ab enim
-                        excepturi porro odio? Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Obcaecati voluptatum
-                        porro, itaque velit nulla autem ad minus laborum dolorem
-                        blanditiis, consequuntur aliquam dolores delectus, illum
-                        suscipit repellat praesentium incidunt repellendus.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Pariatur nostrum deserunt sequi veniam corporis
-                        ducimus quis expedita vero magnam consectetur totam
-                        facere neque incidunt autem, doloremque, ipsum modi quam
-                        et.`,
-    description: "Discover the beauty of thoughtful and functional design.",
-    className: "md:col-span-1",
-    links: [
-      {
-        label: "github",
-        url: "",
-      },
-      {
-        label: "website",
-        url: "",
-      },
-    ],
-    skills: [],
-    picture: {
-      src: "https://source.unsplash.com/random/800x600?sig=2",
-      alt: "The Art of Design",
-      width: 800,
-      height: 600,
-    },
-  },
-  {
-    title: "The Power of Communication",
-    longDescription: `Understand the impact of effective communication in our lives. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Cumque vero atque magnam
-                        tempore voluptatem tempora, sequi ea in molestias iusto
-                        ipsa quaerat voluptates quibusdam nihil, ab enim
-                        excepturi porro odio? Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Obcaecati voluptatum
-                        porro, itaque velit nulla autem ad minus laborum dolorem
-                        blanditiis, consequuntur aliquam dolores delectus, illum
-                        suscipit repellat praesentium incidunt repellendus.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Pariatur nostrum deserunt sequi veniam corporis
-                        ducimus quis expedita vero magnam consectetur totam
-                        facere neque incidunt autem, doloremque, ipsum modi quam
-                        et.`,
-    description:
-      "Understand the impact of effective communication in our lives.",
-    className: "md:col-span-2",
-    links: [
-      {
-        label: "github",
-        url: "",
-      },
-      {
-        label: "website",
-        url: "",
-      },
-    ],
-    skills: [
-      {
-        label: "React",
-      },
-      {
-        label: "TypeScript",
-      },
-      {
-        label: "TailwindCSS",
-      },
-      {
-        label: "Next.js",
-      },
-    ],
-    picture: {
-      src: "https://source.unsplash.com/random/800x600?sig=3",
-      alt: "The Power of Communication",
-      width: 800,
-      height: 600,
-    },
-  },
+  }
+  ,
+  // {
+  //   title: "The Digital Revolution",
+  //   longDescription: `Whether you are a business owner, student or cab-driver, Tenflr offers you multiple ways to either manage your finances or get paid quickly via our secure cashless payment method.`,
+  //   description: "Not just an app, but a great companion.",
+  //   className: "md:col-span-1",
+  //   links: [
+  //     {
+  //       label: "github",
+  //       url: "",
+  //     },
+  //   ],
+  //   skills: [],
+  //   picture: {
+  //     src: "https://source.unsplash.com/random/800x600?sig=1",
+  //     alt: "The Digital Revolution",
+  //     width: 800,
+  //     height: 600,
+  //   },
+  // },
+  // {
+  //   title: "The Art of Design",
+  //   longDescription: `Discover the beauty of thoughtful and functional design. Lorem ipsum dolor sit amet
+  //                       consectetur adipisicing elit. Cumque vero atque magnam
+  //                       tempore voluptatem tempora, sequi ea in molestias iusto
+  //                       ipsa quaerat voluptates quibusdam nihil, ab enim
+  //                       excepturi porro odio? Lorem ipsum, dolor sit amet
+  //                       consectetur adipisicing elit. Obcaecati voluptatum
+  //                       porro, itaque velit nulla autem ad minus laborum dolorem
+  //                       blanditiis, consequuntur aliquam dolores delectus, illum
+  //                       suscipit repellat praesentium incidunt repellendus.
+  //                       Lorem ipsum, dolor sit amet consectetur adipisicing
+  //                       elit. Pariatur nostrum deserunt sequi veniam corporis
+  //                       ducimus quis expedita vero magnam consectetur totam
+  //                       facere neque incidunt autem, doloremque, ipsum modi quam
+  //                       et.`,
+  //   description: "Discover the beauty of thoughtful and functional design.",
+  //   className: "md:col-span-1",
+  //   links: [
+  //     {
+  //       label: "github",
+  //       url: "",
+  //     },
+  //     {
+  //       label: "website",
+  //       url: "",
+  //     },
+  //   ],
+  //   skills: [],
+  //   picture: {
+  //     src: "https://source.unsplash.com/random/800x600?sig=2",
+  //     alt: "The Art of Design",
+  //     width: 800,
+  //     height: 600,
+  //   },
+  // },
+  // {
+  //   title: "The Power of Communication",
+  //   longDescription: `Understand the impact of effective communication in our lives. Lorem ipsum dolor sit amet
+  //                       consectetur adipisicing elit. Cumque vero atque magnam
+  //                       tempore voluptatem tempora, sequi ea in molestias iusto
+  //                       ipsa quaerat voluptates quibusdam nihil, ab enim
+  //                       excepturi porro odio? Lorem ipsum, dolor sit amet
+  //                       consectetur adipisicing elit. Obcaecati voluptatum
+  //                       porro, itaque velit nulla autem ad minus laborum dolorem
+  //                       blanditiis, consequuntur aliquam dolores delectus, illum
+  //                       suscipit repellat praesentium incidunt repellendus.
+  //                       Lorem ipsum, dolor sit amet consectetur adipisicing
+  //                       elit. Pariatur nostrum deserunt sequi veniam corporis
+  //                       ducimus quis expedita vero magnam consectetur totam
+  //                       facere neque incidunt autem, doloremque, ipsum modi quam
+  //                       et.`,
+  //   description:
+  //     "Understand the impact of effective communication in our lives.",
+  //   className: "md:col-span-2",
+  //   links: [
+  //     {
+  //       label: "github",
+  //       url: "",
+  //     },
+  //     {
+  //       label: "website",
+  //       url: "",
+  //     },
+  //   ],
+  //   skills: [
+  //     {
+  //       label: "React",
+  //     },
+  //     {
+  //       label: "TypeScript",
+  //     },
+  //     {
+  //       label: "TailwindCSS",
+  //     },
+  //     {
+  //       label: "Next.js",
+  //     },
+  //   ],
+  //   picture: {
+  //     src: "https://source.unsplash.com/random/800x600?sig=3",
+  //     alt: "The Power of Communication",
+  //     width: 800,
+  //     height: 600,
+  //   },
+  // },
 ];
