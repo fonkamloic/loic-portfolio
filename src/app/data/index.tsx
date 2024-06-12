@@ -30,7 +30,7 @@ export const personalInformation = {
   },
   email: "loic.fonkam@flutterplaza.com",
   address: "Bowie MD",
-  phoneNumber: "",
+  phoneNumber: "+1 (227) 218-7838",
   resume:
     "https://docs.google.com/document/d/1wBtJ6xc35_pLtT66Nb_5gl6qYLtlb3rl6KpRBdrnk3I/export?format=pdf",
 };
@@ -259,7 +259,7 @@ export const projects: Project[] = [
     longDescription: `Our experts will build your flutter apps and teach your staff how to become flutter experts`,
     description:
       "FlutterPlaza is a platform that offers Flutter development services and training.",
-    className: "md:col-span-1",
+    className: "md:col-span-2",
     links: [
       {
         label: "FlutterPlaza",
@@ -303,7 +303,7 @@ export const projects: Project[] = [
     title: "FinFlow App",
     longDescription: `FinFlow is a mobile application that helps you manage your finances and investments. It is designed to help you track your expenses, set budgets, and save money.`,
     description: "Discover the beauty of thoughtful and functional design.",
-    className: "md:col-span-2",
+    className: "md:col-span-1",
     links: [
       {
         label: "Figma",
