@@ -307,12 +307,12 @@ export const projects: Project[] = [
     links: [
       {
         label: "Figma",
-        url: "",
+        url: "https://www.figma.com/proto/w7gUfmRZ8Zr0ZjYytLzemx/FinFlow-App-Figma?node-id=47-5137&t=8WH9igfHdgLW1SOs-1",
       },
-      {
-        label: "website",
-        url: "",
-      },
+      // {
+      //   label: "website",
+      //   url: "",
+      // },
     ],
     skills: [],
     picture: {
@@ -364,7 +364,7 @@ export const projects: Project[] = [
       width: 800,
       height: 800,
     },
-  }
+  },
   // {
   //   title: "The Art of Design",
   //   longDescription: `Discover the beauty of thoughtful and functional design. Lorem ipsum dolor sit amet
@@ -401,54 +401,5 @@ export const projects: Project[] = [
   //     height: 600,
   //   },
   // },
-  // {
-  //   title: "The Power of Communication",
-  //   longDescription: `Understand the impact of effective communication in our lives. Lorem ipsum dolor sit amet
-  //                       consectetur adipisicing elit. Cumque vero atque magnam
-  //                       tempore voluptatem tempora, sequi ea in molestias iusto
-  //                       ipsa quaerat voluptates quibusdam nihil, ab enim
-  //                       excepturi porro odio? Lorem ipsum, dolor sit amet
-  //                       consectetur adipisicing elit. Obcaecati voluptatum
-  //                       porro, itaque velit nulla autem ad minus laborum dolorem
-  //                       blanditiis, consequuntur aliquam dolores delectus, illum
-  //                       suscipit repellat praesentium incidunt repellendus.
-  //                       Lorem ipsum, dolor sit amet consectetur adipisicing
-  //                       elit. Pariatur nostrum deserunt sequi veniam corporis
-  //                       ducimus quis expedita vero magnam consectetur totam
-  //                       facere neque incidunt autem, doloremque, ipsum modi quam
-  //                       et.`,
-  //   description:
-  //     "Understand the impact of effective communication in our lives.",
-  //   className: "md:col-span-2",
-  //   links: [
-  //     {
-  //       label: "github",
-  //       url: "",
-  //     },
-  //     {
-  //       label: "website",
-  //       url: "",
-  //     },
-  //   ],
-  //   skills: [
-  //     {
-  //       label: "React",
-  //     },
-  //     {
-  //       label: "TypeScript",
-  //     },
-  //     {
-  //       label: "TailwindCSS",
-  //     },
-  //     {
-  //       label: "Next.js",
-  //     },
-  //   ],
-  //   picture: {
-  //     src: "https://source.unsplash.com/random/800x600?sig=3",
-  //     alt: "The Power of Communication",
-  //     width: 800,
-  //     height: 600,
-  //   },
-  // },
+
 ];
