@@ -40,7 +40,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head>
+        <link rel="icon" href="/images/favicon.ico" sizes="any" />
+        <link
+          rel="apple-touch-icon"
+          href="/images/apple-icon.png"
+          type="image/png"
+          sizes="180x180"
+        />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-secondary font-sans antialiased dark text-foreground",

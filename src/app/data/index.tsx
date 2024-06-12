@@ -12,7 +12,7 @@ export const seoInformation = {
     "CyberSecurity",
     "Secure Coding",
     "Senior Software Engineer",
-    "Software Engineer"
+    "Software Engineer",
   ],
 };
 
@@ -90,20 +90,20 @@ across all digital channels`,
     links: [
       {
         label: "Website",
-        url: "https://www.flutterplaza.com/"
+        url: "https://www.flutterplaza.com/",
       },
       {
         label: "University",
-        url: "https://university.flutterplaza.com/"
-
+        url: "https://university.flutterplaza.com/",
       },
       {
         label: "Contributions",
-        url: "https://pub.dev/publishers/flutterplaza.com/packages"
-      }, {
+        url: "https://pub.dev/publishers/flutterplaza.com/packages",
+      },
+      {
         label: "GitHub",
-        url: "https://github.com/flutterplaza"
-      }
+        url: "https://github.com/flutterplaza",
+      },
     ],
   },
   {
@@ -117,8 +117,8 @@ across all digital channels`,
     links: [
       {
         label: "Website",
-        url: "https://web.archive.org/web/20211005022256/https://lyteloop.com/"
-      }
+        url: "https://web.archive.org/web/20211005022256/https://lyteloop.com/",
+      },
     ],
   },
 
@@ -290,7 +290,7 @@ export const projects: Project[] = [
       }
     ],
     picture: {
-      src: "https://drive.google.com/file/d/14aREnvKULGwZRvgnT3dPi4wAdGlQlhIj/view",
+      src: "https://drive.google.com/uc?export=view&id=14aREnvKULGwZRvgnT3dPi4wAdGlQlhIj",
       alt: "Tenflr",
       width: 800,
       height: 600,
