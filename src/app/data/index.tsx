@@ -28,8 +28,8 @@ export const personalInformation = {
     width: 502,
     height: 562,
   },
-  email: "fonkamloic@gmail.com",
-  address: "",
+  email: "loic.fonkam@flutterplaza.com",
+  address: "Bowie MD",
   phoneNumber: "",
   resume:
     "https://docs.google.com/document/d/1wBtJ6xc35_pLtT66Nb_5gl6qYLtlb3rl6KpRBdrnk3I/export?format=pdf",
@@ -284,7 +284,7 @@ export const projects: Project[] = [
       },
       {
         label: "Agile Project Management",
-      }, 
+      },
       {
         label: "Communication",
       },
@@ -297,6 +297,29 @@ export const projects: Project[] = [
       alt: "FlutterPlaza",
       width: 800,
       height: 800,
+    },
+  },
+    {
+    title: "FinFlow App",
+    longDescription: `FinFlow is a mobile application that helps you manage your finances and investments. It is designed to help you track your expenses, set budgets, and save money.`,
+    description: "Discover the beauty of thoughtful and functional design.",
+    className: "md:col-span-1",
+    links: [
+      {
+        label: "Figma",
+        url: "",
+      },
+      {
+        label: "website",
+        url: "",
+      },
+    ],
+    skills: [],
+    picture: {
+      src: "https://drive.google.com/file/d/1w5wu76RDljs4pw-32QuKVCtnotMeIe3i",
+      alt: "FinFlow App",
+      width: 800,
+      height: 600,
     },
   },
   {
