@@ -92,7 +92,7 @@ function Projects() {
           <h1 className="text-5xl tracking-wider mb-24 font-bold text-center">
             Projects
           </h1>
-          <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[20rem]">
+          <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[28rem]">
             {projects.map((item, i) => (
               <BentoGridItem
                 key={i}

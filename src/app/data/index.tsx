@@ -12,7 +12,7 @@ export const seoInformation = {
     "CyberSecurity",
     "Secure Coding",
     "Senior Software Engineer",
-    "Software Engineer"
+    "Software Engineer",
   ],
 };
 
@@ -91,20 +91,20 @@ across all digital channels`,
     links: [
       {
         label: "Website",
-        url: "https://www.flutterplaza.com/"
+        url: "https://www.flutterplaza.com/",
       },
       {
         label: "University",
-        url: "https://university.flutterplaza.com/"
-
+        url: "https://university.flutterplaza.com/",
       },
       {
         label: "Contributions",
-        url: "https://pub.dev/publishers/flutterplaza.com/packages"
-      }, {
+        url: "https://pub.dev/publishers/flutterplaza.com/packages",
+      },
+      {
         label: "GitHub",
-        url: "https://github.com/flutterplaza"
-      }
+        url: "https://github.com/flutterplaza",
+      },
     ],
   },
   {
@@ -118,8 +118,8 @@ across all digital channels`,
     links: [
       {
         label: "Website",
-        url: "https://web.archive.org/web/20211005022256/https://lyteloop.com/"
-      }
+        url: "https://web.archive.org/web/20211005022256/https://lyteloop.com/",
+      },
     ],
   },
 
@@ -257,7 +257,8 @@ export const projects: Project[] = [
   {
     title: "FlutterPlaza",
     longDescription: `Our experts will build your flutter apps and teach your staff how to become flutter experts`,
-    description: "FlutterPlaza is a platform that offers Flutter development services and training.",
+    description:
+      "FlutterPlaza is a platform that offers Flutter development services and training.",
     className: "md:col-span-1",
     links: [
       {
@@ -292,17 +293,17 @@ export const projects: Project[] = [
       },
     ],
     picture: {
-      src: "https://drive.google.com/file/d/1n_48Tj2vaQqb0jcMLBRLKaaUZRNWqifT",
+      src: "https://drive.google.com/uc?export=view&id=1n_48Tj2vaQqb0jcMLBRLKaaUZRNWqifT",
       alt: "FlutterPlaza",
       width: 800,
       height: 600,
     },
   },
-    {
+  {
     title: "FinFlow App",
     longDescription: `FinFlow is a mobile application that helps you manage your finances and investments. It is designed to help you track your expenses, set budgets, and save money.`,
     description: "Discover the beauty of thoughtful and functional design.",
-    className: "md:col-span-1",
+    className: "md:col-span-2",
     links: [
       {
         label: "Figma",
@@ -315,7 +316,7 @@ export const projects: Project[] = [
     ],
     skills: [],
     picture: {
-      src: "https://drive.google.com/file/d/1w5wu76RDljs4pw-32QuKVCtnotMeIe3i",
+      src: "https://drive.google.com/uc?export=view&id=1w5wu76RDljs4pw-32QuKVCtnotMeIe3i",
       alt: "FinFlow App",
       width: 800,
       height: 800,
@@ -355,7 +356,7 @@ export const projects: Project[] = [
       },
       {
         label: "Figma",
-      }
+      },
     ],
     picture: {
       src: "https://drive.google.com/uc?export=view&id=14aREnvKULGwZRvgnT3dPi4wAdGlQlhIj",
