@@ -256,6 +256,50 @@ export const testimonies: Testimony[] = [
 
 export const projects: Project[] = [
   {
+    title: "FlutterPlaza",
+    longDescription: `Our experts will build your flutter apps and teach your staff how to become flutter experts`,
+    description: "FlutterPlaza is a platform that offers Flutter development services and training.",
+    className: "md:col-span-1",
+    links: [
+      {
+        label: "FlutterPlaza",
+        url: "https://flutterplaza.com",
+      },
+      {
+        label: "FlutterPlaza University",
+        url: "https://university.flutterplaza.com",
+      },
+      {
+        label: "GitHub",
+        url: "https://github.com/flutterplaza",
+      },
+      {
+        label: "Pub Packages",
+        url: "https://pub.dev/packages/no_screenshot",
+      },
+    ],
+    skills: [
+      {
+        label: "Architecture",
+      },
+      {
+        label: "Agile Project Management",
+      }, 
+      {
+        label: "Communication",
+      },
+      {
+        label: "Flutter",
+      },
+    ],
+    picture: {
+      src: "https://drive.google.com/file/d/1n_48Tj2vaQqb0jcMLBRLKaaUZRNWqifT",
+      alt: "FlutterPlaza",
+      width: 800,
+      height: 800,
+    },
+  },
+  {
     title: "tenflr",
     longDescription: `Whether you are a business owner, student or cab-driver, Tenflr offers you multiple ways to either manage your finances or get paid quickly via our secure cashless payment method. `,
     description:
@@ -292,32 +336,12 @@ export const projects: Project[] = [
       }
     ],
     picture: {
-      src: "https://drive.google.com/file/d/14aREnvKULGwZRvgnT3dPi4wAdGlQlhIj/view",
+      src: "https://drive.google.com/uc?export=view&id=14aREnvKULGwZRvgnT3dPi4wAdGlQlhIj",
       alt: "Tenflr",
       width: 800,
       height: 600,
     },
-  }
-  ,
-  // {
-  //   title: "The Digital Revolution",
-  //   longDescription: `Whether you are a business owner, student or cab-driver, Tenflr offers you multiple ways to either manage your finances or get paid quickly via our secure cashless payment method.`,
-  //   description: "Not just an app, but a great companion.",
-  //   className: "md:col-span-1",
-  //   links: [
-  //     {
-  //       label: "github",
-  //       url: "",
-  //     },
-  //   ],
-  //   skills: [],
-  //   picture: {
-  //     src: "https://source.unsplash.com/random/800x600?sig=1",
-  //     alt: "The Digital Revolution",
-  //     width: 800,
-  //     height: 600,
-  //   },
-  // },
+  },
   // {
   //   title: "The Art of Design",
   //   longDescription: `Discover the beauty of thoughtful and functional design. Lorem ipsum dolor sit amet
