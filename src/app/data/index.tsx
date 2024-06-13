@@ -293,7 +293,8 @@ export const projects: Project[] = [
       },
     ],
     picture: {
-      src: "https://drive.google.com/uc?export=view&id=1n_48Tj2vaQqb0jcMLBRLKaaUZRNWqifT",
+      src: "https://github.com/FlutterPlaza/.github/raw/main/assets/flutter-plaza-github-banner.jpeg",
+      // src: "https://drive.google.com/uc?export=view&id=1n_48Tj2vaQqb0jcMLBRLKaaUZRNWqifT",
       alt: "FlutterPlaza",
       width: 800,
       height: 600,
@@ -384,6 +385,72 @@ export const projects: Project[] = [
     picture: {
       src: "https://drive.google.com/uc?export=view&id=14aREnvKULGwZRvgnT3dPi4wAdGlQlhIj",
       alt: "Tenflr",
+      width: 800,
+      height: 800,
+    },
+  },
+   {
+    title: "Open Source Contributions",
+    description: `I have contributed to several open-source projects on GitHub. I have also published several packages on pub.dev.`,
+    longDescription: "",
+    className: "md:col-span-1",
+    links: [
+      {
+        label: "github",
+        url: "https://pub.dev/publishers/flutterplaza.com/packages",
+      },
+      {
+        label: "Stack Overflow",
+        url: "https://stackoverflow.com/users/11677269/lo%c3%afc-fonkam",
+      },
+    ],
+    skills: [],
+    picture: {
+      src: "https://drive.google.com/uc?export=view&id=1WOBcGZt65OjlkVV5Utf8PubpVSb6U1DO",
+      alt: "stack overflow",
+      width: 800,
+      height: 600,
+    },
+  },
+  {
+    title: "CollegePlan",
+    longDescription: `A mobile solution to solve financial mismanagement for college student`,
+    description:
+      "Become self-sponsored and financially independent after College",
+    className: "md:col-span-3",
+    links: [
+      {
+        label: "Website",
+        url: "https://c0llegeplan.web.app/#",
+      },
+      {
+        label: "Demo of version 1",
+        url: "https://youtu.be/FCdq60SicCM?feature=shared",
+      },
+    ],
+    skills: [
+      {
+        label: "Flutter",
+      },
+      {
+        label: "Dart",
+      },
+      {
+        label: "Firebase",
+      },
+      {
+        label: "MTN Mobile Money API",
+      },
+      {
+        label: "Node.js",
+      },
+      {
+        label: "Figma",
+      },
+    ],
+    picture: {
+      src: "https://drive.google.com/uc?export=view&id=1nisZxi-86cIdSsldS9kacEHiwHHVNvfe",
+      alt: "CollegePlan",
       width: 800,
       height: 800,
     },
