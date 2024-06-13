@@ -347,7 +347,7 @@ export const projects: Project[] = [
     },
   },
   {
-    title: "tenflr",
+    title: "Tenflr",
     longDescription: `Whether you are a business owner, student or cab-driver, Tenflr offers you multiple ways to either manage your finances or get paid quickly via our secure cashless payment method. `,
     description:
       "An innovative mobile wallet to digitize and simplify finance in Cameroon.",
@@ -387,29 +387,6 @@ export const projects: Project[] = [
       alt: "Tenflr",
       width: 800,
       height: 800,
-    },
-  },
-   {
-    title: "Open Source Contributions",
-    description: `I have contributed to several open-source projects on GitHub. I have also published several packages on pub.dev.`,
-    longDescription: "",
-    className: "md:col-span-1",
-    links: [
-      {
-        label: "github",
-        url: "https://pub.dev/publishers/flutterplaza.com/packages",
-      },
-      {
-        label: "Stack Overflow",
-        url: "https://stackoverflow.com/users/11677269/lo%c3%afc-fonkam",
-      },
-    ],
-    skills: [],
-    picture: {
-      src: "https://drive.google.com/uc?export=view&id=1WOBcGZt65OjlkVV5Utf8PubpVSb6U1DO",
-      alt: "stack overflow",
-      width: 800,
-      height: 600,
     },
   },
   {
