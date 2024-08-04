@@ -308,7 +308,7 @@ export const projects: Project[] = [
     links: [
       {
         label: "Figma",
-        url: "https://www.figma.com/proto/w7gUfmRZ8Zr0ZjYytLzemx/FinFlow-App-Figma?node-id=47-5137&t=8WH9igfHdgLW1SOs-1",
+        url: "https://www.figma.com/proto/w7gUfmRZ8Zr0ZjYytLzemx/FinFlow-App-Figma?page-id=2501%3A3854&node-id=2501-5169&viewport=1216%2C499%2C0.09&t=72q6r2XmteWLeKye-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2501%3A3855",
       },
       // {
       //   label: "website",
