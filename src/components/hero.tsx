@@ -10,6 +10,7 @@ import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { time } from "console";
+import Script from "next/script";
 
 function Hero() {
   useGSAP(() => {
@@ -51,17 +52,33 @@ function Hero() {
             {personalInformation.summary}
           </p>
 
-          <div>
+          <div className="flex items-center gap-8 flex-wrap mt-12 mb-12 md:mb-0 md:mt-8 ">
             <Link
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
-                "mt-12 mb-12 md:mb-0 md:mt-8 inline-flex bg-primary/[0.1] border-primary text-primary cursor-pointer",
+                "inline-flex bg-primary/[0.1] border-primary text-primary cursor-pointer",
               )}
               href="/#contact"
             >
               Get in touch
               <ArrowRightIcon className="w-4 h-4 ml-2" />
             </Link>
+            <div className="">
+              <Script
+                type="text/javascript"
+                async
+                src="https://static.zcal.co/embed/v1/embed.js"
+              ></Script>
+              <Link
+                className={cn(
+                  "zcal-inline-widget",
+                  buttonVariants({ size: "lg" }),
+                )}
+                href="https://zcal.co/fonkamloic"
+              >
+                Schedule a meeting
+              </Link>
+            </div>
           </div>
         </div>
         <div className="gap-4 items-end mt-12 hidden md:flex">

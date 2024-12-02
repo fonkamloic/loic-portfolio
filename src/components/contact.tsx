@@ -5,7 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { set, useForm } from "react-hook-form";
 import { z } from "zod";
 
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -20,8 +20,9 @@ import { MapPin, Mail, Phone, SendHorizonal, Loader2 } from "lucide-react";
 import { Textarea } from "./ui/textarea";
 import { toast } from "sonner";
 import { personalInformation } from "@/app/data";
-
-
+import Script from "next/script";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 type contactInfo = {
   label: string;
@@ -74,16 +75,22 @@ export function ContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       setIsSubmitting(true);
-      await fetch("/api/send", {
+      const res = await fetch("/api/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(values),
       });
+      const data = await res.json();
+      if (data.error) {
+        throw new Error(`${data.name}: ${data.message}`);
+      }
+
       toast.success("Message sent successfully.");
       form.reset();
     } catch (error) {
+      console.log(error);
       toast.error("An error occurred. Please try again later.");
     } finally {
       setIsSubmitting(false);
@@ -161,6 +168,20 @@ function Contact() {
                 I&apos;m always open to new opportunities, collaborations, and
                 conversations. Feel free to reach out to me.
               </p>
+
+              <div className="mt-4 mb-2">
+                <Script
+                  type="text/javascript"
+                  async
+                  src="https://static.zcal.co/embed/v1/embed.js"
+                ></Script>
+                <Link
+                  className={cn("zcal-inline-widget", buttonVariants())}
+                  href="https://zcal.co/fonkamloic"
+                >
+                  Schedule a meeting
+                </Link>
+              </div>
 
               <div className="space-y-4 mt-4">
                 {contactInfo.map((info) => (

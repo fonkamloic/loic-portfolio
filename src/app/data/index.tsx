@@ -87,7 +87,8 @@ across all digital channels`,
     position: "Founder/Architect",
     startDate: "May 2022",
     endDate: "Present",
-    description: "Lead a team of developers to build Flutter apps and teach staff how to become Flutter experts.",
+    description:
+      "Lead a team of developers to build Flutter apps and teach staff how to become Flutter experts.",
     links: [
       {
         label: "Website",
@@ -351,7 +352,7 @@ export const projects: Project[] = [
     longDescription: `Whether you are a business owner, student or cab-driver, Tenflr offers you multiple ways to either manage your finances or get paid quickly via our secure cashless payment method. `,
     description:
       "An innovative mobile wallet to digitize and simplify finance in Cameroon.",
-    className: "md:col-span-2",
+    className: "md:col-span-1",
     links: [
       {
         label: "Website",
@@ -432,4 +433,90 @@ export const projects: Project[] = [
       height: 800,
     },
   },
+  // {
+  //   title: "The Art of Design",
+  //   longDescription: `Discover the beauty of thoughtful and functional design. Lorem ipsum dolor sit amet
+  //                       consectetur adipisicing elit. Cumque vero atque magnam
+  //                       tempore voluptatem tempora, sequi ea in molestias iusto
+  //                       ipsa quaerat voluptates quibusdam nihil, ab enim
+  //                       excepturi porro odio? Lorem ipsum, dolor sit amet
+  //                       consectetur adipisicing elit. Obcaecati voluptatum
+  //                       porro, itaque velit nulla autem ad minus laborum dolorem
+  //                       blanditiis, consequuntur aliquam dolores delectus, illum
+  //                       suscipit repellat praesentium incidunt repellendus.
+  //                       Lorem ipsum, dolor sit amet consectetur adipisicing
+  //                       elit. Pariatur nostrum deserunt sequi veniam corporis
+  //                       ducimus quis expedita vero magnam consectetur totam
+  //                       facere neque incidunt autem, doloremque, ipsum modi quam
+  //                       et.`,
+  //   description: "Discover the beauty of thoughtful and functional design.",
+  //   className: "md:col-span-1",
+  //   links: [
+  //     {
+  //       label: "github",
+  //       url: "",
+  //     },
+  //     {
+  //       label: "website",
+  //       url: "",
+  //     },
+  //   ],
+  //   skills: [],
+  //   picture: {
+  //     src: "https://source.unsplash.com/random/800x600?sig=2",
+  //     alt: "The Art of Design",
+  //     width: 800,
+  //     height: 600,
+  //   },
+  // },
+  // {
+  //   title: "The Power of Communication",
+  //   longDescription: `Understand the impact of effective communication in our lives. Lorem ipsum dolor sit amet
+  //                       consectetur adipisicing elit. Cumque vero atque magnam
+  //                       tempore voluptatem tempora, sequi ea in molestias iusto
+  //                       ipsa quaerat voluptates quibusdam nihil, ab enim
+  //                       excepturi porro odio? Lorem ipsum, dolor sit amet
+  //                       consectetur adipisicing elit. Obcaecati voluptatum
+  //                       porro, itaque velit nulla autem ad minus laborum dolorem
+  //                       blanditiis, consequuntur aliquam dolores delectus, illum
+  //                       suscipit repellat praesentium incidunt repellendus.
+  //                       Lorem ipsum, dolor sit amet consectetur adipisicing
+  //                       elit. Pariatur nostrum deserunt sequi veniam corporis
+  //                       ducimus quis expedita vero magnam consectetur totam
+  //                       facere neque incidunt autem, doloremque, ipsum modi quam
+  //                       et.`,
+  //   description:
+  //     "Understand the impact of effective communication in our lives.",
+  //   className: "md:col-span-2",
+  //   links: [
+  //     {
+  //       label: "github",
+  //       url: "",
+  //     },
+  //     {
+  //       label: "website",
+  //       url: "",
+  //     },
+  //   ],
+  //   skills: [
+  //     {
+  //       label: "React",
+  //     },
+  //     {
+  //       label: "TypeScript",
+  //     },
+  //     {
+  //       label: "TailwindCSS",
+  //     },
+  //     {
+  //       label: "Next.js",
+  //     },
+  //   ],
+  //   picture: {
+  //     src: "https://source.unsplash.com/random/800x600?sig=3",
+  //     alt: "The Power of Communication",
+  //     width: 800,
+  //     height: 600,
+  //   },
+  // },
 ];

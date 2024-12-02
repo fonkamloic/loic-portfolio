@@ -33,6 +33,7 @@ function CarouselSpacing() {
                   )}
                 >
                   <Image
+                    priority
                     src={testimony.picture.src}
                     alt={testimony.picture.alt}
                     className="object-cover w-full h-full rounded-full mb-8"
