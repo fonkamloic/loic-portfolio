@@ -13,7 +13,7 @@ export async function POST(req: Request) {
     body: JSON.stringify({
       sender: {
         name: data.name,
-        email: personalInformation.email,
+        email: "fonkamloic+myportfolio@gmail.com",
       },
       to: [{ email: personalInformation.email, name: personalInformation.name }],
       replyTo: { email: data.email, name: data.name },
