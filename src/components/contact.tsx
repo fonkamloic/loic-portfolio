@@ -52,6 +52,8 @@ export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = React.useState<boolean>(false);
 
   // 2. Define a submit handler.
+  const honeypotRef = React.useRef<HTMLInputElement>(null);
+
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       setIsSubmitting(true);
@@ -60,7 +62,7 @@ export function ContactForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(values),
+        body: JSON.stringify({ ...values, website: honeypotRef.current?.value ?? "" }),
       });
       const data = await res.json();
       if (data.error) {
@@ -117,6 +119,16 @@ export function ContactForm() {
               <FormMessage />
             </FormItem>
           )}
+        />
+        {/* Honeypot — hidden from real users, filled by bots */}
+        <input
+          ref={honeypotRef}
+          type="text"
+          name="website"
+          autoComplete="off"
+          tabIndex={-1}
+          aria-hidden="true"
+          className="absolute opacity-0 h-0 w-0 overflow-hidden pointer-events-none"
         />
         <Button type="submit" disabled={isSubmitting}>
           {isSubmitting ? (
