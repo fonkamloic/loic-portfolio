@@ -40,6 +40,30 @@ export async function POST(req: Request) {
     );
   }
 
+  // Sanitize inputs — strip HTML tags and limit length
+  const sanitize = (str: unknown, maxLen = 500): string =>
+    String(str ?? "").replace(/<[^>]*>/g, "").trim().slice(0, maxLen);
+
+  const name = sanitize(data.name, 100);
+  const email = sanitize(data.email, 254);
+  const message = sanitize(data.message, 5000);
+
+  // Validate email format server-side
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return Response.json(
+      { error: true, name: "INVALID_EMAIL", message: "Invalid email address." },
+      { status: 400 },
+    );
+  }
+
+  const body = [
+    `From: ${name}`,
+    `Email: ${email}`,
+    "",
+    "Message:",
+    message,
+  ].join("\n");
+
   const res = await fetch("https://api.brevo.com/v3/smtp/email", {
     method: "POST",
     headers: {
@@ -49,13 +73,13 @@ export async function POST(req: Request) {
     },
     body: JSON.stringify({
       sender: {
-        name: data.name,
+        name: "Portfolio Contact",
         email: "fonkamloic+myportfolio@gmail.com",
       },
       to: [{ email: personalInformation.email, name: personalInformation.name }],
-      replyTo: { email: data.email, name: data.name },
-      subject: "Get in touch",
-      textContent: data.message,
+      replyTo: { email, name },
+      subject: `Portfolio reach out from: ${name}`,
+      textContent: body,
     }),
   });
 
