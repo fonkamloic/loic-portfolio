@@ -20,7 +20,7 @@ export const personalInformation = {
   name: "Loïc Fonkam",
   summary:
     "Award-winning Flutter developer with over 6 years of experience. Organized, highly motivated problem-solver who is enthusiastic about CyberSecurity and Specializes in secure coding.",
-  yearsOfExperience: 6,
+  yearsOfExperience: new Date().getFullYear() - 2018,
   logoPicture: "https://avatars.githubusercontent.com/u/23703424?v=4",
   picture: {
     src: "/images/Loic's Poforlio.png",
@@ -170,10 +170,10 @@ export const testimonies: Testimony[] = [
   {
     name: "Charles Palanzo",
     picture: {
-      src: "https://media.licdn.com/dms/image/C4E03AQF5Nc9wYQ8TFg/profile-displayphoto-shrink_100_100/0/1652015525001?e=1721260800&v=beta&t=81N4WiS-NEkwzgWvnOrsWc4eqz21DwciQm4BxcG82mg",
+      src: "https://ui-avatars.com/api/?name=Charles+Palanzo&background=22c55e&color=fff&size=200",
       alt: "Charles Palanzo",
-      width: 800,
-      height: 600,
+      width: 200,
+      height: 200,
     },
     content: `Loïc worked directly for me at LyteLoop developing a secure collaboration application which used LyteLoop's patented storage-in-motion system to as an unhackable storage mechanism. As an experienced Engineering manager I interviewed and hired Loïc based on the strength of his experience - he started coding at an early age - his engaging personality and his focus on writing secure application code. 
 
@@ -193,10 +193,10 @@ export const testimonies: Testimony[] = [
   {
     name: "Tim Matchen",
     picture: {
-      src: "https://media.licdn.com/dms/image/D4E03AQHeFc6xMT7lvw/profile-displayphoto-shrink_200_200/0/1699312676930?e=1721260800&v=beta&t=bdYa1z9lmjT7InmuzEJVRBp8rJVHsUSByz9phxhgbps",
+      src: "https://ui-avatars.com/api/?name=Tim+Matchen&background=22c55e&color=fff&size=200",
       alt: "Tim Matchen",
-      width: 800,
-      height: 600,
+      width: 200,
+      height: 200,
     },
     content: `Working with Loïc was an absolute pleasure. Beyond his excellent technical skills as a developer, what impressed me most about Loïc was his aptitude as a problem solver. He is the type of person who is interested not only in finding the solution to problems but rather finding the best solution to the problem. 
 
@@ -214,10 +214,10 @@ export const testimonies: Testimony[] = [
   {
     name: "Ryan Howard",
     picture: {
-      src: "https://media.licdn.com/dms/image/C4E03AQEUXoWVGleqdA/profile-displayphoto-shrink_200_200/0/1516790140753?e=1721260800&v=beta&t=eSP1Htow5otXYAJ6iC9t3SpWj_ufrQgPYux1R6XSyQU",
+      src: "https://ui-avatars.com/api/?name=Ryan+Howard&background=22c55e&color=fff&size=200",
       alt: "Ryan Howard",
-      width: 800,
-      height: 600,
+      width: 200,
+      height: 200,
     },
     content: `If you are reading this, you have found a wonderful candidate for your company. I had the pleasure of working with Loïc during my time at LyteLoop and witnessing firsthand an outstanding developer. From the first interview I had with him through onboarding and continuing contribution to the team he exceeded all expectations. Loïc managed to onboard at the same time we were bringing up a new project and was able to hit the ground running developing our mobile app with limited guidance. He communicated very effectively and worked around the MANY obstacles and blockers of bringing up new project yet still met or exceeded timelines with well thought out code and design.
     Very quickly he was providing valuable guidance to the rest of the team that advanced the project and soothed pain points of integrating various components. I also had the pleasure of spending time with Loïc outside of the office and found him a charismatic and easy going friend.
@@ -237,10 +237,10 @@ export const testimonies: Testimony[] = [
   {
     name: "Dipayan Choudhary",
     picture: {
-      src: "https://media.licdn.com/dms/image/C5603AQFy1bISLqpkEA/profile-displayphoto-shrink_100_100/0/1516789906002?e=1721260800&v=beta&t=LItWs-VU6a9fpWNG3FzdfUDfiKLM9HPT4YP9sIZg9cY",
+      src: "https://ui-avatars.com/api/?name=Dipayan+Choudhary&background=22c55e&color=fff&size=200",
       alt: "Dipayan Choudhary",
-      width: 800,
-      height: 600,
+      width: 200,
+      height: 200,
     },
     content: `Loïc Fonkam is a real gem to work with. He came into a live project and was thrown into the deep end for an app development project in which he showed great flexibility and understanding of the unique requirements. His skills in flutter helped move the project along.
     In addition to his impressive flutter skills, he has shown self driven enthusiasm, is a wonderful team player and a person.`,
@@ -325,24 +325,159 @@ export const projects: Project[] = [
     },
   },
   {
-    title: "Open Source Contributions",
-    description: `I have contributed to several open-source projects on GitHub. I have also published several packages on pub.dev.`,
-    longDescription: "",
+    title: "Scroll & Cross",
+    description:
+      "A Bible study platform designed to help users explore scripture through an intuitive, modern interface.",
+    longDescription:
+      "Scroll & Cross is a Bible study website that helps users engage with scripture in a clean, modern interface.",
     className: "md:col-span-1",
     links: [
       {
-        label: "github",
+        label: "Visit",
+        url: "https://scrollandcross.com",
+      },
+    ],
+    skills: [
+      { label: "HTML" },
+      { label: "CSS" },
+      { label: "JavaScript" },
+    ],
+    picture: {
+      src: "/images/scroll-and-cross-banner.svg",
+      alt: "Scroll & Cross",
+      width: 800,
+      height: 600,
+    },
+  },
+  {
+    title: "Security Toolkit",
+    description:
+      "A suite of 6 Flutter packages for app security: screenshot protection, screen-mirror blocking, secure watermarks, tap-jacking prevention, face-detection lock, and emulator detection.",
+    longDescription:
+      "A comprehensive security toolkit for Flutter apps published on pub.dev. Includes no_screenshot, no_screen_mirror, secure_watermark, no_tapjack, face_detection_lock, and real_device.",
+    className: "md:col-span-2",
+    links: [
+      {
+        label: "no_screenshot",
+        url: "https://pub.dev/packages/no_screenshot",
+      },
+      {
+        label: "no_screen_mirror",
+        url: "https://pub.dev/packages/no_screen_mirror",
+      },
+      {
+        label: "secure_watermark",
+        url: "https://pub.dev/packages/secure_watermark",
+      },
+      {
+        label: "no_tapjack",
+        url: "https://pub.dev/packages/no_tapjack",
+      },
+      {
+        label: "face_detection_lock",
+        url: "https://pub.dev/packages/face_detection_lock",
+      },
+      {
+        label: "real_device",
+        url: "https://pub.dev/packages/real_device",
+      },
+    ],
+    skills: [
+      { label: "Flutter" },
+      { label: "Dart" },
+      { label: "Cybersecurity" },
+      { label: "Kotlin" },
+      { label: "Swift" },
+    ],
+    picture: {
+      src: "/images/security-toolkit-banner.svg",
+      alt: "Security Toolkit",
+      width: 800,
+      height: 600,
+    },
+  },
+  {
+    title: "Lattice Protocol",
+    description:
+      "A post-quantum Signal protocol implementation with 7 Dart packages for next-generation encrypted communication.",
+    longDescription:
+      "Lattice Protocol brings post-quantum cryptography to the Signal protocol. A suite of 7 Dart packages implementing lattice-based key exchange, encryption, and secure messaging primitives.",
+    className: "md:col-span-2",
+    links: [
+      {
+        label: "Pub Packages",
         url: "https://pub.dev/publishers/flutterplaza.com/packages",
       },
       {
-        label: "Stack Overflow",
-        url: "https://stackoverflow.com/users/11677269/lo%c3%afc-fonkam",
+        label: "GitHub",
+        url: "https://github.com/flutterplaza",
       },
     ],
-    skills: [],
+    skills: [
+      { label: "Dart" },
+      { label: "Cryptography" },
+      { label: "Post-Quantum" },
+      { label: "Signal Protocol" },
+    ],
     picture: {
-      src: "https://drive.google.com/uc?export=view&id=1WOBcGZt65OjlkVV5Utf8PubpVSb6U1DO",
-      alt: "stack overflow",
+      src: "/images/lattice-protocol-banner.svg",
+      alt: "Lattice Protocol",
+      width: 800,
+      height: 600,
+    },
+  },
+  {
+    title: "Data & Identity Platforms",
+    description:
+      "Two platform suites: dart_data (5 packages) for structured data handling, and face_gate (7 packages) for facial-recognition identity.",
+    longDescription:
+      "dart_data provides 5 packages for structured data pipelines in Dart. face_gate delivers 7 packages for facial-recognition-based identity and access management in Flutter apps.",
+    className: "md:col-span-1",
+    links: [
+      {
+        label: "Pub Packages",
+        url: "https://pub.dev/publishers/flutterplaza.com/packages",
+      },
+    ],
+    skills: [
+      { label: "Dart" },
+      { label: "Flutter" },
+      { label: "ML" },
+      { label: "Data Pipelines" },
+    ],
+    picture: {
+      src: "/images/data-identity-banner.svg",
+      alt: "Data & Identity Platforms",
+      width: 800,
+      height: 600,
+    },
+  },
+  {
+    title: "Developer Tools",
+    description:
+      "A collection of productivity packages: av_player, flutter_compile, auto_interop, jasprfire, garmin_flutter, and deep_face.",
+    longDescription:
+      "Open-source developer tools published on pub.dev including av_player for media playback, flutter_compile for build tooling, auto_interop for FFI automation, jasprfire for Jaspr + Firebase, garmin_flutter for wearable integration, and deep_face for facial analysis.",
+    className: "md:col-span-1",
+    links: [
+      {
+        label: "Pub Packages",
+        url: "https://pub.dev/publishers/flutterplaza.com/packages",
+      },
+      {
+        label: "GitHub",
+        url: "https://github.com/flutterplaza",
+      },
+    ],
+    skills: [
+      { label: "Flutter" },
+      { label: "Dart" },
+      { label: "FFI" },
+      { label: "Firebase" },
+    ],
+    picture: {
+      src: "/images/developer-tools-banner.svg",
+      alt: "Developer Tools",
       width: 800,
       height: 600,
     },
@@ -395,7 +530,7 @@ export const projects: Project[] = [
     longDescription: `A mobile solution to solve financial mismanagement for college student`,
     description:
       "Become self-sponsored and financially independent after College",
-    className: "md:col-span-3",
+    className: "md:col-span-1",
     links: [
       {
         label: "Website",

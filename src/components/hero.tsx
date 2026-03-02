@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { time } from "console";
+
 import Script from "next/script";
 
 function Hero() {

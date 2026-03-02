@@ -49,11 +49,24 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .glow-card {
+    @apply transition-all duration-300;
+  }
+  .glow-card:hover {
+    border-color: hsl(var(--primary) / 0.5);
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.15);
   }
 }
 

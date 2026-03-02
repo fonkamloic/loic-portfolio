@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#0d2818"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Terminal window -->
+  <rect x="200" y="120" width="400" height="280" rx="8" fill="#111" stroke="#22c55e" stroke-width="1.5" opacity="0.5"/>
+  <!-- Title bar -->
+  <rect x="200" y="120" width="400" height="30" rx="8" fill="#1a1a1a" stroke="#22c55e" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="220" cy="135" r="5" fill="#ff5f57" opacity="0.6"/>
+  <circle cx="238" cy="135" r="5" fill="#ffbd2e" opacity="0.6"/>
+  <circle cx="256" cy="135" r="5" fill="#28ca41" opacity="0.6"/>
+  <!-- Code lines -->
+  <g font-family="monospace" font-size="13" opacity="0.6">
+    <text x="220" y="175" fill="#22c55e">$</text>
+    <text x="235" y="175" fill="#a0a0a0"> flutter pub add av_player</text>
+    <text x="220" y="200" fill="#22c55e">$</text>
+    <text x="235" y="200" fill="#a0a0a0"> dart compile exe main.dart</text>
+    <text x="220" y="225" fill="#22c55e">$</text>
+    <text x="235" y="225" fill="#a0a0a0"> flutter_compile build</text>
+    <text x="220" y="250" fill="#a0a0a0">  Building for iOS...</text>
+    <text x="220" y="275" fill="#22c55e">  ✓ Build successful</text>
+    <text x="220" y="305" fill="#22c55e">$</text>
+    <text x="235" y="305" fill="#a0a0a0"> garmin_flutter connect</text>
+    <text x="220" y="330" fill="#22c55e">  ✓ Device paired</text>
+    <text x="220" y="365" fill="#22c55e">$ _</text>
+  </g>
+  <!-- Wrench + gear icons -->
+  <g transform="translate(140, 430)" opacity="0.2">
+    <circle cx="30" cy="30" r="20" fill="none" stroke="#22c55e" stroke-width="2"/>
+    <circle cx="30" cy="30" r="8" fill="none" stroke="#22c55e" stroke-width="2"/>
+    <line x1="30" y1="8" x2="30" y2="0" stroke="#22c55e" stroke-width="3"/>
+    <line x1="30" y1="52" x2="30" y2="60" stroke="#22c55e" stroke-width="3"/>
+    <line x1="8" y1="30" x2="0" y2="30" stroke="#22c55e" stroke-width="3"/>
+    <line x1="52" y1="30" x2="60" y2="30" stroke="#22c55e" stroke-width="3"/>
+  </g>
+  <g transform="translate(610, 430)" opacity="0.2">
+    <rect x="5" y="0" width="8" height="50" rx="2" fill="#22c55e" transform="rotate(-45, 30, 25)"/>
+    <rect x="37" y="0" width="8" height="50" rx="2" fill="#22c55e" transform="rotate(45, 30, 25)"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="490" text-anchor="middle" fill="#e5e5e5" font-family="monospace" font-size="28" font-weight="bold" letter-spacing="4">Developer Tools</text>
+  <text x="400" y="520" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="14" opacity="0.6" letter-spacing="2">6 OPEN-SOURCE PACKAGES</text>
+</svg>

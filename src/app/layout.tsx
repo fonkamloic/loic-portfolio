@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils";
 import { Inter as FontSans } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { Toaster } from "@/components/ui/sonner";
+import Spotlight from "@/components/spotlight";
+import SideSocials from "@/components/side-socials";
 import "simplebar-react/dist/simplebar.min.css";
 import { seoInformation } from "./data";
 
@@ -55,6 +57,8 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
+        <Spotlight />
+        <SideSocials />
         <Navbar />
         <Toaster />
         {children}

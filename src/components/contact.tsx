@@ -1,11 +1,16 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { set, useForm } from "react-hook-form";
 import { z } from "zod";
+import SectionHeading from "./section-heading";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { Button, buttonVariants } from "@/components/ui/button";
+gsap.registerPlugin(ScrollTrigger);
+
+import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -16,37 +21,12 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { MapPin, Mail, Phone, SendHorizonal, Loader2 } from "lucide-react";
+import { SendHorizonal, Loader2 } from "lucide-react";
 import { Textarea } from "./ui/textarea";
 import { toast } from "sonner";
-import { personalInformation } from "@/app/data";
-import Script from "next/script";
-import { cn } from "@/lib/utils";
+import { navItems } from "@/constants";
 import Link from "next/link";
 
-type contactInfo = {
-  label: string;
-  value: string;
-  icon: React.ReactNode;
-};
-
-const contactInfo: contactInfo[] = [
-  {
-    label: "Email",
-    value: personalInformation.email,
-    icon: <Mail className="w-5 h-5 text-primary" />,
-  },
-  {
-    label: "Location",
-    value: personalInformation.address,
-    icon: <MapPin className="w-5 h-5 text-primary" />,
-  },
-  {
-    label: "Phone",
-    value: personalInformation.phoneNumber,
-    icon: <Phone className="w-5 h-5 text-primary" />,
-  },
-];
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -99,41 +79,40 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <FormField
-          control={form.control}
-          name="name"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Name</FormLabel>
-              <FormControl>
-                <Input placeholder="Name" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Email</FormLabel>
-              <FormControl>
-                <Input placeholder="example@gmail.com" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <div className="flex gap-4">
+          <FormField
+            control={form.control}
+            name="name"
+            render={({ field }) => (
+              <FormItem className="flex-1">
+                <FormControl>
+                  <Input placeholder="Name" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem className="flex-1">
+                <FormControl>
+                  <Input placeholder="Email" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        </div>
         <FormField
           control={form.control}
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
               <FormControl>
-                <Textarea placeholder="Message..." {...field} />
+                <Textarea placeholder="Your message..." className="min-h-[10rem] resize-none" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -154,49 +133,51 @@ export function ContactForm() {
 }
 
 function Contact() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const cols = sectionRef.current?.querySelectorAll(".contact-col");
+    if (!cols?.length) return;
+
+    gsap.set(cols, { opacity: 0, y: 30 });
+
+    const tween = gsap.to(cols, {
+      opacity: 1,
+      y: 0,
+      stagger: 0.2,
+      duration: 0.6,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top 80%",
+      },
+    });
+
+    return () => {
+      tween.scrollTrigger?.kill();
+      gsap.set(cols, { opacity: 1, y: 0 });
+    };
+  }, []);
+
   return (
     <section className="bg-background/[0.2]" id="contact">
       <div className="">
-        <div className="max-w-6xl mx-auto py-32 px-8">
-          <div className="flex flex-col md:items-start gap-8 md:flex-wrap md:flex-row">
-            <div className="flex-1 mb-8 md:mb-0 space-y-10">
-              <div className="flex items-center gap-3">
-                <div className="w-20 h-1 bg-primary"></div>
-                <h3 className="text-2xl font-bold tracking-wide">Contact me</h3>
-              </div>
-              <p className="text-normal font-light tracking-wide text-zinc-400">
-                I&apos;m always open to new opportunities, collaborations, and
-                conversations. Feel free to reach out to me.
-              </p>
-
-              <div className="mt-4 mb-2">
-                <Script
-                  type="text/javascript"
-                  async
-                  src="https://static.zcal.co/embed/v1/embed.js"
-                ></Script>
+        <div className="max-w-6xl mx-auto py-32 px-8" ref={sectionRef}>
+          <SectionHeading number={4} title="Contact" />
+          <div className="flex flex-col md:flex-row gap-12 md:gap-16">
+            <nav className="contact-col hidden md:flex flex-col gap-4">
+              {navItems.map((item) => (
                 <Link
-                  className={cn("zcal-inline-widget", buttonVariants())}
-                  href="https://zcal.co/fonkamloic"
+                  key={item.label}
+                  href={item.href}
+                  className="group flex items-center gap-4 text-xs uppercase tracking-widest text-muted-foreground hover:text-primary transition-all font-bold"
                 >
-                  Schedule a meeting
+                  <span className="block h-px w-8 bg-muted-foreground group-hover:w-16 group-hover:bg-primary transition-all duration-300" />
+                  {item.label}
                 </Link>
-              </div>
-
-              <div className="space-y-4 mt-4">
-                {contactInfo.map((info) => (
-                  <div key={info.label} className="flex items-center gap-4">
-                    {info.icon}
-                    <div>
-                      <p className="text-normal font-light tracking-wide">
-                        {info.value}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="flex-1 border border-zinc-700 rounded-lg p-8 bg-background/[0.4]">
+              ))}
+            </nav>
+            <div className="contact-col flex-1 border border-zinc-700 rounded-lg p-8 bg-background/[0.4]">
               <ContactForm />
             </div>
           </div>

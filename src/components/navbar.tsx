@@ -1,26 +1,54 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Logo from "./ui/logo";
 import { navItems } from "@/constants";
 import Link from "next/link";
 import { Button, buttonVariants } from "./ui/button";
 import { cn } from "@/lib/utils";
-import { DownloadIcon } from "@radix-ui/react-icons";
+import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 import { AlignLeft } from "lucide-react";
 import { personalInformation } from "@/app/data";
 
+const sectionIds = ["about", "experience", "works", "testimonies", "contact"];
+
 function Navbar() {
+  const [activeSection, setActiveSection] = useState<string>("");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-50% 0px -50% 0px" },
+    );
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   function renderNav() {
     return (
       <>
         {navItems.map((item) => {
+          const sectionId = item.href.replace("#", "");
+          const isActive = activeSection === sectionId;
           return (
             <Link
               href={item.href}
               className={cn(
                 buttonVariants({ variant: "link", size: "default" }),
-                "text-foreground",
+                isActive ? "text-primary" : "text-foreground",
                 "hover:text-primary",
                 "text-normal font-light tracking-wider",
               )}
@@ -41,15 +69,13 @@ function Navbar() {
           {renderNav()}
         </nav>
         <Link
-          href={personalInformation.resume}
+          href="https://github.com/flutterplaza"
           target="_blank"
           rel="noopener noreferrer"
-          locale={false}
-          download
           className={cn(buttonVariants(), "cursor-pointer")}
         >
-          Resume
-          <DownloadIcon className="w-4 h-4 ml-2" />
+          See my work
+          <ExternalLinkIcon className="w-4 h-4 ml-2" />
         </Link>
 
         <Sheet>
@@ -66,15 +92,13 @@ function Navbar() {
             <div className="space-y-5 flex-col flex mx-auto w-max mt-8">
               {renderNav()}
               <Link
-                href={personalInformation.resume}
+                href="https://github.com/flutterplaza"
                 target="_blank"
                 rel="noopener noreferrer"
-                locale={false}
-                download
                 className={cn(buttonVariants(), "cursor-pointer")}
               >
-                Resume
-                <DownloadIcon className="w-4 h-4 ml-2" />
+                See my work
+                <ExternalLinkIcon className="w-4 h-4 ml-2" />
               </Link>
             </div>
           </SheetContent>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a0d2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Data flow lines -->
+  <g stroke="#22c55e" stroke-width="1.5" opacity="0.15" fill="none">
+    <path d="M100 200 Q250 150 400 200 Q550 250 700 200"/>
+    <path d="M100 250 Q250 200 400 250 Q550 300 700 250"/>
+    <path d="M100 300 Q250 250 400 300 Q550 350 700 300"/>
+    <path d="M100 350 Q250 300 400 350 Q550 400 700 350"/>
+  </g>
+  <!-- Face outline (identity) -->
+  <g transform="translate(320, 130)" stroke="#22c55e" fill="none" opacity="0.4">
+    <ellipse cx="80" cy="100" rx="55" ry="70" stroke-width="2"/>
+    <circle cx="60" cy="85" r="6" stroke-width="1.5"/>
+    <circle cx="100" cy="85" r="6" stroke-width="1.5"/>
+    <path d="M65 115 Q80 130 95 115" stroke-width="1.5"/>
+    <!-- Scan lines -->
+    <line x1="15" y1="60" x2="145" y2="60" stroke-width="0.5" opacity="0.3"/>
+    <line x1="15" y1="80" x2="145" y2="80" stroke-width="0.5" opacity="0.3"/>
+    <line x1="15" y1="100" x2="145" y2="100" stroke-width="0.5" opacity="0.3"/>
+    <line x1="15" y1="120" x2="145" y2="120" stroke-width="0.5" opacity="0.3"/>
+    <line x1="15" y1="140" x2="145" y2="140" stroke-width="0.5" opacity="0.3"/>
+  </g>
+  <!-- Database cylinders -->
+  <g transform="translate(160, 350)" opacity="0.3">
+    <ellipse cx="30" cy="0" rx="30" ry="10" fill="none" stroke="#22c55e" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#22c55e" stroke-width="1.5"/>
+    <line x1="60" y1="0" x2="60" y2="40" stroke="#22c55e" stroke-width="1.5"/>
+    <ellipse cx="30" cy="40" rx="30" ry="10" fill="none" stroke="#22c55e" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(580, 350)" opacity="0.3">
+    <ellipse cx="30" cy="0" rx="30" ry="10" fill="none" stroke="#22c55e" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#22c55e" stroke-width="1.5"/>
+    <line x1="60" y1="0" x2="60" y2="40" stroke="#22c55e" stroke-width="1.5"/>
+    <ellipse cx="30" cy="40" rx="30" ry="10" fill="none" stroke="#22c55e" stroke-width="1.5"/>
+  </g>
+  <!-- Connecting arrows -->
+  <g stroke="#22c55e" stroke-width="1" opacity="0.15">
+    <line x1="220" y1="370" x2="380" y2="300"/>
+    <line x1="580" y1="370" x2="420" y2="300"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="490" text-anchor="middle" fill="#e5e5e5" font-family="monospace" font-size="26" font-weight="bold" letter-spacing="3">Data &amp; Identity</text>
+  <text x="400" y="520" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="14" opacity="0.6" letter-spacing="2">DART_DATA + FACE_GATE</text>
+</svg>
