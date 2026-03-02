@@ -122,8 +122,13 @@ function TestimonyCard({
 
 function InfiniteMarquee() {
   const trackRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const pausedRef = useRef(false);
   const offsetRef = useRef(0);
+  const draggingRef = useRef(false);
+  const wasDragRef = useRef(false);
+  const dragStartXRef = useRef(0);
+  const dragOffsetStartRef = useRef(0);
 
   useEffect(() => {
     const track = trackRef.current;
@@ -132,16 +137,19 @@ function InfiniteMarquee() {
     const speed = 0.5; // px per frame
     let raf: number;
 
+    const wrapOffset = () => {
+      const halfWidth = track.scrollWidth / 2;
+      if (halfWidth <= 0) return;
+      while (offsetRef.current < -halfWidth) offsetRef.current += halfWidth;
+      while (offsetRef.current > 0) offsetRef.current -= halfWidth;
+    };
+
     const step = () => {
-      if (!pausedRef.current) {
+      if (!pausedRef.current && !draggingRef.current) {
         offsetRef.current -= speed;
-        // Reset when the first set has fully scrolled out
-        const halfWidth = track.scrollWidth / 2;
-        if (Math.abs(offsetRef.current) >= halfWidth) {
-          offsetRef.current += halfWidth;
-        }
-        track.style.transform = `translateX(${offsetRef.current}px)`;
       }
+      wrapOffset();
+      track.style.transform = `translateX(${offsetRef.current}px)`;
       raf = requestAnimationFrame(step);
     };
 
@@ -149,14 +157,66 @@ function InfiniteMarquee() {
     return () => cancelAnimationFrame(raf);
   }, []);
 
+  // Pointer drag handlers for manual scrolling
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const onPointerDown = (e: PointerEvent) => {
+      draggingRef.current = true;
+      wasDragRef.current = false;
+      dragStartXRef.current = e.clientX;
+      dragOffsetStartRef.current = offsetRef.current;
+      container.setPointerCapture(e.pointerId);
+      container.style.cursor = "grabbing";
+    };
+
+    const onPointerMove = (e: PointerEvent) => {
+      if (!draggingRef.current) return;
+      const dx = e.clientX - dragStartXRef.current;
+      if (Math.abs(dx) > 3) wasDragRef.current = true;
+      offsetRef.current = dragOffsetStartRef.current + dx;
+    };
+
+    const onPointerUp = (e: PointerEvent) => {
+      if (!draggingRef.current) return;
+      draggingRef.current = false;
+      container.releasePointerCapture(e.pointerId);
+      container.style.cursor = "grab";
+    };
+
+    // Prevent clicks on links after a drag
+    const onClick = (e: MouseEvent) => {
+      if (wasDragRef.current) {
+        e.preventDefault();
+        e.stopPropagation();
+        wasDragRef.current = false;
+      }
+    };
+
+    container.addEventListener("pointerdown", onPointerDown);
+    container.addEventListener("pointermove", onPointerMove);
+    container.addEventListener("pointerup", onPointerUp);
+    container.addEventListener("pointercancel", onPointerUp);
+    container.addEventListener("click", onClick, true);
+
+    return () => {
+      container.removeEventListener("pointerdown", onPointerDown);
+      container.removeEventListener("pointermove", onPointerMove);
+      container.removeEventListener("pointerup", onPointerUp);
+      container.removeEventListener("pointercancel", onPointerUp);
+      container.removeEventListener("click", onClick, true);
+    };
+  }, []);
+
   const pause = () => { pausedRef.current = true; };
-  const resume = () => { pausedRef.current = false; };
+  const resume = () => { if (!draggingRef.current) pausedRef.current = false; };
 
   // Duplicate the list so it loops seamlessly
   const items = [...testimonies, ...testimonies];
 
   return (
-    <div className="overflow-hidden">
+    <div ref={containerRef} className="overflow-hidden cursor-grab select-none touch-pan-y">
       <div ref={trackRef} className="flex gap-6 will-change-transform">
         {items.map((testimony, i) => (
           <TestimonyCard
