@@ -15,15 +15,22 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 export const metadata: Metadata = {
-  title: seoInformation.title,
+  metadataBase: new URL(seoInformation.url),
+  title: {
+    default: seoInformation.title,
+    template: `%s | Loïc Fonkam`,
+  },
   description: seoInformation.description,
   keywords: seoInformation.keywords,
+  authors: [{ name: "Loïc Fonkam", url: seoInformation.url }],
+  creator: "Loïc Fonkam",
   openGraph: {
     title: seoInformation.title,
     description: seoInformation.description,
     type: "website",
     locale: "en_US",
     url: seoInformation.url,
+    siteName: "Loïc Fonkam",
     images: [
       {
         url: seoInformation.image,
@@ -32,6 +39,27 @@ export const metadata: Metadata = {
         alt: seoInformation.title,
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: seoInformation.title,
+    description: seoInformation.description,
+    creator: "@FonkamL",
+    images: [seoInformation.image],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: seoInformation.url,
   },
 };
 
@@ -44,12 +72,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/images/favicon.ico" sizes="any" />
-        <link
-          rel="apple-touch-icon"
-          href="/images/apple-icon.png"
-          type="image/png"
-          sizes="180x180"
-        />
+        <link rel="icon" href="/images/favicon-16x16.png" type="image/png" sizes="16x16" />
+        <link rel="icon" href="/images/favicon-32x32.png" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" sizes="180x180" />
       </head>
       <body
         className={cn(

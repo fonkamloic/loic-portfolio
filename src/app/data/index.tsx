@@ -1,18 +1,23 @@
 import { Project, SocialLink, Testimony, WorkExperience } from "../schema";
 
 export const seoInformation = {
-  title: "Loïc Fonkam",
+  title: "Loïc Fonkam — Senior Software Engineer",
   description:
-    "Award-winning Flutter developer with over 6 years of experience.",
+    "Senior software engineer specializing in Flutter, cybersecurity, and secure coding. Founder of FlutterPlaza. Building secure mobile apps and open-source security toolkits.",
   url: "https://loicfonkam.com",
   image: "https://avatars.githubusercontent.com/u/23703424?v=4",
   keywords: [
     "Loic Fonkam",
+    "Loïc Fonkam",
     "Flutter Developer",
-    "CyberSecurity",
-    "Secure Coding",
     "Senior Software Engineer",
-    "Software Engineer",
+    "Mobile App Developer",
+    "Cybersecurity",
+    "Secure Coding",
+    "FlutterPlaza",
+    "Dart Developer",
+    "Post-Quantum Cryptography",
+    "Open Source",
   ],
 };
 
