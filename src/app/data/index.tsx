@@ -28,7 +28,7 @@ export const personalInformation = {
     width: 502,
     height: 562,
   },
-  email: "loic.fonkam@flutterplaza.com",
+  email: "fonkamloic@gmail.com",
   address: "Bowie MD",
   phoneNumber: "+1 (227) 218-7838",
   resume:
