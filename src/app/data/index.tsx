@@ -24,7 +24,7 @@ export const seoInformation = {
 export const personalInformation = {
   name: "Loïc Fonkam",
   summary:
-    "Award-winning Flutter developer with over 6 years of experience. Organized, highly motivated problem-solver who is enthusiastic about CyberSecurity and Specializes in secure coding.",
+    `Award-winning Flutter developer with over ${new Date().getFullYear() - 2018} years of experience. Organized, highly motivated problem-solver who is enthusiastic about CyberSecurity and Specializes in secure coding.`,
   yearsOfExperience: new Date().getFullYear() - 2018,
   logoPicture: "https://avatars.githubusercontent.com/u/23703424?v=4",
   picture: {
